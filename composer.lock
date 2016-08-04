@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "782a09009c00710726594e7b2f01759d",
-    "content-hash": "b1a3b6c929f378ecb278f1edefdd1258",
+    "hash": "94d600c0a1b148da7a0361afa33f9d55",
+    "content-hash": "6d75a1b79ebc4aaae15c9ad49cdc2f26",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -900,6 +900,75 @@
             "time": "2016-05-25 21:59:48"
         },
         {
+            "name": "drupal/bootstrap",
+            "version": "8.3.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap",
+                "reference": "af4f230e7cb01bc75b5a47b1070d8d261e9a7f50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.0-rc1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap",
+            "time": "2016-07-05 17:34:45"
+        },
+        {
+            "name": "drupal/captcha",
+            "version": "8.1.0-alpha0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/captcha",
+                "reference": "43d5ed1c263c06bff5528ffc265966177c29da59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/captcha-8.x-1.0-alpha0.zip",
+                "reference": "43d5ed1c263c06bff5528ffc265966177c29da59",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/node": "8.*"
+            },
+            "replace": {
+                "drupal/image_captcha": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/image_captcha"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides the CAPTCHA API for adding challenges to arbitrary forms.",
+            "homepage": "https://www.drupal.org/project/captcha",
+            "time": "2015-11-25 14:19:48"
+        },
+        {
             "name": "drupal/console",
             "version": "1.0.0-beta3",
             "source": {
@@ -1155,6 +1224,48 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-07-18 15:01:43"
+        },
+        {
+            "name": "drupal/recaptcha",
+            "version": "8.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/recaptcha",
+                "reference": "687a0d6b4cf24bf5a5a7c149c1419fca2c0a8fb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/recaptcha-8.x-2.2.zip",
+                "reference": "687a0d6b4cf24bf5a5a7c149c1419fca2c0a8fb5",
+                "shasum": null
+            },
+            "require": {
+                "drupal/captcha": "~8.0",
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/u/hass"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/147903/committers"
+                }
+            ],
+            "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
+            "homepage": "https://www.drupal.org/project/recaptcha",
+            "time": "2016-07-30 06:17:09"
         },
         {
             "name": "drush/drush",

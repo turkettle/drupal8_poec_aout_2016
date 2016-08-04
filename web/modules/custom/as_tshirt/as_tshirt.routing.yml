@@ -1,0 +1,8 @@
+
+as_tshirt.default_controller_listingPage:
+  path: '/product/tshirts'
+  defaults:
+    _controller: '\Drupal\as_tshirt\Controller\DefaultController::listingPage'
+    _title: 'Listing de T-shirts'
+  requirements:
+    _permission: 'access content'
