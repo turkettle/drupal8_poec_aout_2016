@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.tshirt.body
+        - field.field.node.tshirt.field_images
+        - field.field.node.tshirt.field_price
+        - field.field.node.tshirt.field_quantity
+        - field.field.node.tshirt.field_size
+        - field.field.node.tshirt.field_storage
+        - image.style.thumbnail
+        - node.type.tshirt
+    module:
+        - image
+        - text
+        - user
+id: node.tshirt.teaser
+targetEntityType: node
+bundle: tshirt
+mode: teaser
+content:
+    body:
+        label: hidden
+        type: text_summary_or_trimmed
+        weight: 1
+        settings:
+            trim_length: 600
+        third_party_settings: {  }
+    field_images:
+        type: image
+        weight: 0
+        label: hidden
+        settings:
+            image_style: thumbnail
+            image_link: ''
+        third_party_settings: {  }
+    links:
+        weight: 2
+        settings: {  }
+        third_party_settings: {  }
+hidden:
+    field_price: true
+    field_quantity: true
+    field_size: true
+    field_storage: true

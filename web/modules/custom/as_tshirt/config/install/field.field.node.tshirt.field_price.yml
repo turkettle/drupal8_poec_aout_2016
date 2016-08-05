@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_price
+        - node.type.tshirt
+id: node.tshirt.field_price
+field_name: field_price
+entity_type: node
+bundle: tshirt
+label: Prix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+    min: !!float 0
+    max: null
+    prefix: ''
+    suffix: €
+field_type: float

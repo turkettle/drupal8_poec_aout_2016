@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_storage
+        - node.type.tshirt
+id: node.tshirt.field_storage
+field_name: field_storage
+entity_type: node
+bundle: tshirt
+label: Stock
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+    min: 0
+    max: null
+    prefix: ''
+    suffix: ''
+field_type: integer
