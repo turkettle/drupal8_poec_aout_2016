@@ -19,9 +19,23 @@ class DefaultController extends ControllerBase {
    */
   public function listingPage() {
 
+	$query = \Drupal::entityQuery('node');
+	$query->condition('type', 'tshirt');
+	$query->condition('status', 1);
+	$query->sort('created', 'DESC');
+	$result = $query->execute();
+
+	$nodes = \Drupal\node\Entity\Node::loadMultiple($result);
+
+	$tshirts = [];
+	foreach ($nodes as $node) {
+		$node_teaser = node_view($node, 'teaser');
+		$tshirts[] = $node_teaser;
+	}
+
     return [
 		'#theme' => 'tshirt_list',
-		'tshirts' => ['T-shirt 1','T-shirt 2','T-shirt 3'],
+		'tshirts' => $tshirts,
     ];
   }
 

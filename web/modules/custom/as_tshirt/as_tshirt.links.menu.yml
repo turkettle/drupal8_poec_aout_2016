@@ -1,0 +1,6 @@
+as_tshirt.list:
+  title: 'T-shirts'
+  description: 'Liste des T-shirts'
+  route_name: as_tshirt.default_controller_listingPage
+  weight: 100
+  menu_name: main

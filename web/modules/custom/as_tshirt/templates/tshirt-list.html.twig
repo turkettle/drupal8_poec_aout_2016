@@ -1,1 +1,12 @@
-dsvsvqvsd wcbffqdgbqdf
+
+<div class="list-wrapper">
+	<div class="header-message">
+		Choisissez votre T-Shirts
+	</div>
+
+	{% for tshirt in elements.tshirts %}
+		<div class="row">
+			{{ tshirt }}
+		</div>
+	{% endfor %}
+</div>
